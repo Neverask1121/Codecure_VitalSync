@@ -1,6 +1,6 @@
 # VitalSync - AI-Powered Medical Triage Platform
 
-![VitalSync Banner](https://via.placeholder.com/1200x400/0f111a/6366f1?text=VitalSync+-+Intelligent+Health+Triage)
+![VitalSync Banner](data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'1200'%20height%3D'400'%20viewBox%3D'0%200%201200%20400'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'bg'%20x1%3D'0%25'%20y1%3D'0%25'%20x2%3D'100%25'%20y2%3D'100%25'%3E%3Cstop%20offset%3D'0%25'%20stop-color%3D'%230f111a'%2F%3E%3Cstop%20offset%3D'100%25'%20stop-color%3D'%231a1c29'%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient%20id%3D'textGrad'%20x1%3D'0%25'%20y1%3D'0%25'%20x2%3D'100%25'%20y2%3D'0%25'%3E%3Cstop%20offset%3D'0%25'%20stop-color%3D'%236366f1'%2F%3E%3Cstop%20offset%3D'100%25'%20stop-color%3D'%23a855f7'%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D'1200'%20height%3D'400'%20fill%3D'url(%23bg)'%2F%3E%3Ccircle%20cx%3D'600'%20cy%3D'180'%20r%3D'150'%20fill%3D'none'%20stroke%3D'%236366f1'%20stroke-width%3D'2'%20stroke-dasharray%3D'10%2010'%20opacity%3D'0.3'%2F%3E%3Ccircle%20cx%3D'600'%20cy%3D'180'%20r%3D'180'%20fill%3D'none'%20stroke%3D'%23a855f7'%20stroke-width%3D'1'%20stroke-dasharray%3D'5%205'%20opacity%3D'0.2'%2F%3E%3Cpath%20d%3D'M%20350%20180%20L%20450%20180%20L%20490%2090%20L%20550%20270%20L%20610%2050%20L%20660%20240%20L%20710%20150%20L%20750%20180%20L%20850%20180'%20fill%3D'none'%20stroke%3D'url(%23textGrad)'%20stroke-width%3D'8'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3Ctext%20x%3D'600'%20y%3D'330'%20font-family%3D'system-ui%2C%20-apple-system%2C%20sans-serif'%20font-size%3D'48'%20font-weight%3D'800'%20fill%3D'%23ffffff'%20text-anchor%3D'middle'%20letter-spacing%3D'2'%3EVitalSync%3C%2Ftext%3E%3Ctext%20x%3D'600'%20y%3D'365'%20font-family%3D'system-ui%2C%20-apple-system%2C%20sans-serif'%20font-size%3D'20'%20font-weight%3D'400'%20fill%3D'%239ca3af'%20text-anchor%3D'middle'%20letter-spacing%3D'4'%3EINTELLIGENT%20HEALTH%20TRIAGE%3C%2Ftext%3E%3C%2Fsvg%3E)
 
 ## Overview
 
@@ -67,4 +67,4 @@ If you prefer testing over HTTP (useful for local network device testing):
 
 *Built with ❤️ for [Hackathon Name].*
 # Codecure_VitalSync
-# Codecure_VitalSync
+
