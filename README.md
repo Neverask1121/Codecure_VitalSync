@@ -1,18 +1,7 @@
 # VitalSync - AI-Powered Medical Triage Platform
 
 <p align="center">
-  <img src="data:image/svg+xml;utf8,
-  <svg xmlns='http://www.w3.org/2000/svg' width='260' height='80'>
-    <rect width='100%' height='100%' rx='12' fill='%230f172a'/>
-    <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle'
-      font-family='Segoe UI, Arial, sans-serif'
-      font-size='28'
-      font-weight='700'
-      fill='%23a78bfa'>
-      ❤ VitalSync
-    </text>
-  </svg>" 
-  alt="VitalSync Banner"/>
+  <img src="./banner.svg" alt="VitalSync Banner"/>
 </p>
 
 ## Overview
