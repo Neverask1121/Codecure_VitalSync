@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitalSync - AI Health Triage</title>
+    <meta name="description" content="AI-driven patient triage platform to prioritize care effectively.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Using Phosphor Icons for premium aesthetic -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-mesh"></div>
+
+    <header class="glass-nav">
+        <div class="nav-content">
+            <div class="logo">
+                <i class="ph-fill ph-heartbeat icon-pulse"></i>
+                <span>VitalSync</span>
+            </div>
+            <div class="view-toggle">
+                <button class="toggle-btn active" id="btn-patient">Patient Portal</button>
+                <button class="toggle-btn" id="btn-provider">Provider Dashboard</button>
+            </div>
+            <div class="user-profile">
+                <div class="avatar">
+                    <i class="ph ph-user"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="app-container">
+        <!-- Patient View -->
+        <section id="view-patient" class="view-section active view-fade-in">
+            <div class="hero-section">
+                <h1>AI-Powered Health Triage</h1>
+                <p>Describe your symptoms securely, and our intelligent system will guide your next steps.</p>
+            </div>
+            <div class="card glass-card form-container">
+                <div class="card-header">
+                    <h2><i class="ph ph-stethoscope"></i> Symptom Assessment</h2>
+                </div>
+                <form id="symptom-form">
+                    <div class="form-group">
+                        <label for="patient-name">Patient Name</label>
+                        <input type="text" id="patient-name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="symptoms">Describe your symptoms</label>
+                        <textarea id="symptoms" rows="4" placeholder="E.g., I've had a severe headache and high fever since yesterday morning..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="btn-submit">
+                        <span class="btn-text">Analyze Symptoms</span>
+                        <i class="ph ph-magic-wand"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Loading overlay for AI logic -->
+            <div id="ai-loading" class="hidden">
+                <div class="loading-spinner"></div>
+                <p>Analyzing symptoms...</p>
+            </div>
+
+            <!-- Analysis Result (hidden initially) -->
+            <div id="analysis-result" class="card glass-card hidden">
+                <div class="card-header">
+                    <h2><i class="ph ph-clipboard-text"></i> Assessment Result</h2>
+                </div>
+                <div class="result-content">
+                    <div class="severity-badge" id="result-severity">Unknown</div>
+                    <div class="result-body">
+                        <h3 id="result-title">Title</h3>
+                        <p id="result-desc">Description</p>
+                    </div>
+                    <div class="action-plan">
+                        <h4>Recommended Action</h4>
+                        <p id="result-action">Action</p>
+                    </div>
+                </div>
+                <button class="btn btn-outline" id="btn-reset">Start New Assessment</button>
+            </div>
+        </section>
+
+        <!-- Provider View -->
+        <section id="view-provider" class="view-section hidden">
+            <div class="dashboard-header">
+                <div class="header-text">
+                    <h1>Provider Station</h1>
+                    <p>Live Triage Queue — Automatically prioritized by AI</p>
+                </div>
+                <div class="stats-row">
+                    <div class="stat-card">
+                        <span class="stat-label">Critical</span>
+                        <span class="stat-value text-red" id="stat-critical">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Urgent</span>
+                        <span class="stat-value text-orange" id="stat-urgent">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-label">Routine</span>
+                        <span class="stat-value text-green" id="stat-routine">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="queue-container">
+                <div class="queue-header">
+                    <h2>Active Patient Queue</h2>
+                    <div class="filter-controls">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="critical">Critical</button>
+                        <button class="filter-btn" data-filter="urgent">Urgent</button>
+                    </div>
+                </div>
+                <div class="queue-list" id="patient-queue">
+                    <!-- Queue items injected by JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
