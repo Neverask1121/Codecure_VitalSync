@@ -73,6 +73,6 @@ If you prefer testing over HTTP (useful for local network device testing):
 
 ---
 
-*Built with ❤️ for [Hackathon Name].*
+*Built with ❤️.*
 
 # Codecure_VitalSync
